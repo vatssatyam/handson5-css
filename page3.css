@@ -1,0 +1,180 @@
+.sky {
+    border: 8px solid;
+    height: 100vh;
+    width: 99%;
+    border-color: white green white orange;
+    background-image: url(./sky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.heading1 {
+    font-size: 40PX;
+    font-weight: bold;
+
+    color: black;
+    background-color: orange;
+}
+
+.heading2 {
+    font-size: 40PX;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    margin: 0px 8px;
+}
+
+.heading3 {
+    font-size: 40PX;
+    font-weight: bold;
+    color: black;
+    background-color: green;
+}
+
+.road {
+    background-image: url(./road.jpg);
+    height: 30vh;
+    width: 400%;
+    bottom: 0;
+    top: 70vh;
+    position: absolute;
+    /* animation: rode 3s infinite linear alternate; */
+    animation: rode 4s infinite linear;
+}
+
+.city {
+    background-image: url(./city.png);
+    height: 30vh;
+    width: 400%;
+    bottom: 0;
+    top: 40vh;
+    position: absolute;
+    /* animation: rode 3s infinite linear alternate; */
+    animation: rode 4s infinite linear;
+}
+
+.sun {
+    background-image: url(./sun\ \(1\).png);
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 10%;
+    bottom: 0;
+    right: 0;
+    top: 10vh;
+    position: absolute;
+    /* animation: rode 3s infinite linear alternate; */
+    animation: sun 7s infinite linear;
+}
+.tays1 {
+    background-image: url(./wheel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 10vh;
+    width: 10%;
+   padding: 2px;
+   margin: 5px;
+    left: 40vw;
+    top: 73vh;
+    position: absolute;
+    z-index: 3;
+   
+  
+    /* animation: rode 3s infinite linear alternate; */
+    animation: tayrs 1s infinite linear;
+}
+.tays2 {
+    background-image: url(./wheel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 10vh;
+    width: 10%;
+   padding: px;
+   margin: 5px;
+    left: 61vw;
+    top: 73vh;
+    position: absolute;
+    z-index: 3;
+   
+  
+    /* animation: rode 3s infinite linear alternate; */
+    animation: tayrs 1s infinite linear;
+}
+.flag{
+    background-image: url(./Tiranga1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 10vh;
+    width: 10%;
+   padding: 2px;
+   margin: 5px;
+    left: 62vw;
+    top: 59.5vh;
+    position: absolute;
+    z-index: 4;
+   
+  
+    /* animation: rode 3s infinite linear alternate; */
+    /* animation: tayrs 1s infinite linear; */
+}
+
+
+/* .car{
+    background-image: url(./car.png);
+    height: 30vh;
+    width: 70%;
+    bottom: 0;
+    top: 40vh;
+    position: absolute;
+    z-index: 2;
+    /* animation: rode 3s infinite linear alternate; */
+/* animation: rode 4s infinite linear ; */
+/* } */
+
+.car {
+
+
+    left: 40vw;
+    top: 60vh;
+    position: absolute;
+    z-index: 2;
+    animation: car 1s infinite linear ; 
+}
+
+@keyframes rode {
+    100% {
+        transform: translateX(-2500px);
+    }
+}
+
+@keyframes sun {
+    100% {
+        transform: translateX(-100px);
+    }
+}
+@keyframes tayrs {
+    100% {
+        transform: rotateZ(780deg);
+        padding-left: 50px    }
+}
+@keyframes car {
+    0% {
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    100%{
+        transform: translateY(1px);
+    }
+}

@@ -1,0 +1,260 @@
+body {
+    background-color: yellow;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+a {
+    font-size: 15px;
+}
+
+.parent {}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    background-color: aquamarine;
+}
+
+.line1 {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.c {
+    position: relative;
+    top: 110px;
+    font-size: large;
+    font-weight: 900;
+    left: 0;
+}
+
+.box1,
+.box2,
+.box3 {
+    background-color: rgb(100, 209, 113);
+    animation-name: forline1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+
+}
+
+.box11,
+.box12,
+.box13 {
+    background-color: grey;
+    animation-name: forline2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+
+}
+
+.box21,
+.box22,
+.box23 {
+    background-color: rgb(101, 198, 112);
+    animation-name: forline3;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    animation-duration: 2s;
+
+}
+
+.box31 {
+    background-color: rgb(101, 198, 112);
+    animation-name: forline31;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+
+}
+
+.box32 {
+    background-color: brown;
+    animation-name: forline32;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+
+}
+
+.box33 {
+    background-color: green;
+    animation-name: forline33;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+
+}
+
+
+/* Animation  */
+
+@keyframes forline1 {
+    from {
+
+        transform: skewX(20deg);
+    }
+
+    to {
+        transform: skewX(-20deg);
+
+    }
+}
+
+@keyframes forline2 {
+    from {
+
+        transform: skewY(25deg);
+    }
+
+    to {
+        transform: skewY(-25deg);
+
+    }
+}
+
+@keyframes forline3 {
+    from {
+
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+
+    }
+}
+
+@keyframes forline31 {
+    from {
+
+        transform: scaleY(0.5);
+    }
+
+    to {
+        transform: scaleY(1);
+
+    }
+}
+
+@keyframes forline32 {
+    from {
+
+
+        transform: scaleX(0.5);
+    }
+
+    to {
+
+        transform: scaleX(1);
+
+    }
+}
+
+@keyframes forline33 {
+    from {
+
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-90deg);
+
+    }
+}
+
+/* page2 */
+.page2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.ol {
+    background-color: rgb(59, 198, 59);
+
+
+}
+
+.lux1 {
+    transition-duration: 2s;
+}
+
+.lux2 {
+    transition: height 5s, width 2s;
+}
+
+.lux3 {
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.lux4 {
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.lux5 {
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.lux6 {
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.lux7 {
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.lux1:hover {
+    width: 300px;
+}
+
+.lux2:hover {
+    width: 250px;
+    height: 320px;
+}
+
+.lux3:hover {
+    width: 300px;
+}
+
+.lux4:hover {
+    width: 300px;
+}
+
+.lux5:hover {
+    width: 300px;
+}
+
+.lux6:hover {
+    width: 300px;
+}
+
+.lux7:hover {
+    width: 300px;
+}
+.page2next{
+
+position: relative;
+  display: flex;
+  bottom: 40px;
+  justify-content: center;
+}
+.next{
+    color: rgb(223, 101, 101);
+    font-size: 32px;
+    font-weight: 900;
+}
